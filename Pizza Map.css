@@ -20,8 +20,10 @@
   margin: 0;
 }
 
+option:focus,
 select:focus {
   outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 a,
@@ -60,6 +62,7 @@ a:visited {
   height: 35px;
   border: 1px solid lightgrey;
   margin-bottom: 20px;
+  background-color: white;
   font-family: "IBMPlexSansKR-Regular", sans-serif;
   font-size: 15px;
   text-indent: 1em;
