@@ -1,6 +1,6 @@
 var mapContainer = document.getElementById("map"), // 지도를 표시할 div
   mapOption = {
-    center: new daum.maps.LatLng(37.537187, 127.005476), // 지도의 중심좌표
+    center: new daum.maps.LatLng(37.5118239121138, 127.059159043842), // 지도의 중심좌표
     level: 5, // 지도의 확대 레벨
   };
 
@@ -10,7 +10,7 @@ var map = new daum.maps.Map(mapContainer, mapOption);
 var geocoder = new daum.maps.services.Geocoder();
 //마커를 미리 생성
 var marker = new daum.maps.Marker({
-  position: new daum.maps.LatLng(37.537187, 127.005476),
+  position: new daum.maps.LatLng(37.5118239121138, 127.059159043842),
   map: map,
 });
 const select_store = document.getElementById("select_store");
@@ -22,7 +22,7 @@ const pizzaData = {
   처인구점: "경기 용인시 처인구 경안천로42번길 7",
 };
 
-function sample5_execDaumPostcode() {
+function findStore() {
   var geocoder = new kakao.maps.services.Geocoder();
   let store_address = pizzaData[select_store.value];
 
@@ -44,4 +44,4 @@ function sample5_execDaumPostcode() {
     marker.setPosition(coords);
   });
 }
-select_store.addEventListener("change", sample5_execDaumPostcode);
+select_store.addEventListener("change", findStore);
