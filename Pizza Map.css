@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "IBMPlexSansKR-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ghanachoco";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ghanachoco.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*******/
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+select:focus {
+  outline: none;
+}
+
+a,
+a:visited {
+  color: darkred;
+  text-decoration: none;
+}
+
+/*******/
+
+.wrapper {
+  position: relative;
+  height: 100vh;
+  background-color: rgb(255, 239, 197);
+}
+
+.content_container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "ghanachoco", serif;
+}
+
+.title_pizza {
+  display: block;
+  width: 50px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.select_store {
+  display: block;
+  width: 300px;
+  height: 35px;
+  border: 1px solid lightgrey;
+  margin-bottom: 20px;
+  font-family: "IBMPlexSansKR-Regular", sans-serif;
+  font-size: 15px;
+  text-indent: 1em;
+}
+
+.iconSource {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 12px 0;
+  background-color: rgb(233, 177, 57);
+  color: rgb(37, 37, 37);
+  font-family: "IBMPlexSansKR-Regular", sans-serif;
+  font-size: 12px;
+  text-align: center;
+}
